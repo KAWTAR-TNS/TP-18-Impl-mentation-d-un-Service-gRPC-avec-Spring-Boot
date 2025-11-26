@@ -9,9 +9,6 @@
     <artifactId>grpc-spring-demo</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <modules>
-        <module>TP18_gprc</module>
-    </modules>
 
     <!-- Parent Spring Boot -->
     <parent>
@@ -37,7 +34,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- JPA & H2 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -48,21 +44,18 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <!-- gRPC SpringBoot Starter -->
         <dependency>
             <groupId>net.devh</groupId>
             <artifactId>grpc-server-spring-boot-starter</artifactId>
             <version>3.1.0.RELEASE</version>
         </dependency>
 
-        <!-- Protobuf runtime -->
         <dependency>
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
